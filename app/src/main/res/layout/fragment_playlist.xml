@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PlaylistFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:src="@drawable/img"
+        android:scaleType="fitXY"
+        android:id="@+id/iv_back"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_nowplaying"
+        android:text="Now Playing"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/talkmedown"
+        android:text="Talk Me Down"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="33dp"
+        android:textStyle="italic"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blue"
+        android:text="Blue Neighbourhood"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="290dp"
+        android:layout_marginStart="33dp"
+        android:textStyle="italic"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="370dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/recycler_view"/>
+
+
+</FrameLayout>
